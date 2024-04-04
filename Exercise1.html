@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Exercise 1
+    </title>
+    
+</head>
+<body>
+    <h1>Use JavaScript to change HTML content</h1>
+    <p id="p">The original content</p>
+
+    <button id="b" type="button" class="button button2" onclick="changeIt()">Try it</button>
+
+    <script>
+        function changeIt(){
+            let borderColor = document.getElementById('b');
+            let paragraph = document.getElementById('p');
+            borderColor.style.border='2px solid blue';
+            paragraph.innerHTML='Paragraph changed';
+        }
+    </script>
+</body>
+</html>

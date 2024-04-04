@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Purrfect Partners Adoption</title>
+        <link rel="stylesheet" href="styleSheetExo7.css">
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            body{
+                background-color:FloralWhite;
+                margin:0;
+            }
+            th, td{
+                color:#444;
+                background-color:FloralWhite;
+                font-weight:bold;
+                padding:10px;
+                text-align:center;
+            }
+            .pet-info{
+                padding:20px;
+                font-size: 15px;
+                font-weight: normal;
+                background-color:#c8b9b1;
+                border-radius: 20px;
+                margin-bottom: 20px;
+                box-shadow: 0px 0px 10px rgba(224, 209, 181, 0.1);
+            }
+            table.body{
+            border-collapse:separate;
+            border-spacing: 50px 20px;
+            width:100%;
+            }
+            .pet-info img {
+            max-width: 150px;
+            max-height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 10px;
+            }
+            .interested-button {
+            background-color: #887a6e;
+            border: none;
+            color: white;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 17px;
+            margin: 2px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            }
+            .interested-button:hover {
+            background-color: #504a42;
+            }
+
+            .interested-button:active {
+            background-color: #847970;
+            }
+        </style>
+        <script src="jsFileExo7.js"></script>
+    </head>
+    <body>
+
+        <div class="header"><!--HEADER-->
+            <table class="center"><!--Creating the table for linked gif-->
+                <tr>
+                    <td>
+                        <a href="HomePage.html" target="_self">
+                        <img src="https://media.tenor.com/CKPtTCb7_uYAAAAi/fat-cat.gif" alt="Cute cat animated GIF" style="width:100px;height:100px">
+                        </a>
+                    </td>
+                    <td>
+                        <h1> Purrfect Partners Adoption </h1>
+                        <div>
+                            <p id="datetime" style="font-size: 15px;"></p>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="HomePage.html" target="_self">
+                        <img src="https://clipart-library.com/images/8ixKaobip.gif" alt="Cute dog animated GIF" style="width:120px;height:120px">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="clearfix"><!--SIDE MENU-->
+            <div class="column menu">
+                <ul>
+                    <li><a href="MainPage.html" target="_self">Home Page</a></li>
+                    <li><a href="BrowseAvailablePets.html" target="_self" >Browse Available Pets</a></li>
+                    <li><a href="FindDogCat.html" target="_self">Find a Dog/Cat</a></li>
+                    <li><a href="DogCare.html" target="_self">Dog Care</a></li>
+                    <li><a href="CatCare.html" target="_self">Cat Care</a></li>
+                    <li><a href="HaveaPet.html" target="_self">Have a Pet to Give Away</a></li>
+                    <li><a href="ContactUs.html" target="_self">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="column content"><!--CONTENT-->
+                <table style="width:100%" class="body">
+                    <tr>
+                        <th  colspan="3" style="text-shadow:2px 2px 4px #444;font-size: large;">Available Pets</th>
+                    </tr>
+                    <tr>
+                        <td class="pet-info">
+                            <img src="https://www.azpetvet.com/wp-content/uploads/shutterstock_69423520.jpg" alt="Pet 1">
+                            <p><strong>Name:</strong> Raouane</p>
+                            <p><strong>Gender:</strong> Female</p>
+                            <p><strong>Age:</strong> 2 years</p>
+                            <p><strong>Breed:</strong> Persian</p>
+                            <p><strong>Specificity:</strong> Requires regular grooming</p>
+                            <button class="interested-button">Interested</button>
+                        </td>
+                        <td class="pet-info">
+                            <img src="https://tipaw-api-assets.s3.eu-central-1.amazonaws.com/img_uploads/7e640bec-def2-4f9c-b929-1b4a72f17e59___.webp" alt="Pet 2">
+                            <p><strong>Name:</strong> Kaoutar</p>
+                            <p><strong>Gender:</strong> Male</p>
+                            <p><strong>Age:</strong> 3 years</p>
+                            <p><strong>Breed:</strong> Labrador Retriever</p>
+                            <p><strong>Specificity:</strong> Loves playing fetch</p>
+                            <button class="interested-button">Interested</button>
+                        </td>
+                        <td class="pet-info">
+                            <img src="https://www.azenmacskam.hu/wp-content/uploads/2022/03/gettyimages-1208059578.jpg" alt="Pet 5">
+                            <p><strong>Name:</strong> Yousra</p>
+                            <p><strong>Gender:</strong> Female</p>
+                            <p><strong>Age:</strong> 1.5 years</p>
+                            <p><strong>Breed:</strong> Ragdoll</p>
+                            <p><strong>Specificity:</strong> Enjoys cuddling and lounging</p>
+                            <button class="interested-button">Interested</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pet-info">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/%D0%A2%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%BE%D1%82_%D0%9B%D1%83%D0%BB%D0%B0%D0%BC%D0%B5%D0%B9_%D0%A2%D0%B0%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%9B%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0%2C_%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD_%D0%BC%D0%B8%D1%80%D0%B0_%D0%BF%D0%BE_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5_WCF%2C_%D0%BE%D0%BA%D1%80%D0%B0%D1%81_%D0%B1%D0%BB%D1%8E_%D0%BF%D0%BE%D0%B8%D0%BD%D1%82_01_%28cropped%29.jpg/640px-thumbnail.jpg" alt="Pet 3">
+                            <p><strong>Name:</strong> Camelia</p>
+                            <p><strong>Gender:</strong> Female</p>
+                            <p><strong>Age:</strong> 1 year</p>
+                            <p><strong>Breed:</strong> Siamese</p>
+                            <p><strong>Specificity:</strong> Affectionate and playful</p>
+                            <button class="interested-button">Interested</button>
+                        </td>
+                        <td class="pet-info">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScOiaUAhpk3jJhDGwbwRkQBClSJC4Vg7Jlog&usqp=CAU" alt="Pet 4">
+                            <p><strong>Name:</strong> Lina</p>
+                            <p><strong>Gender:</strong> Male</p>
+                            <p><strong>Age:</strong> 4 years</p>
+                            <p><strong>Breed:</strong> German Shepherd</p>
+                            <p><strong>Specificity:</strong> Highly energetic and loyal</p>
+                            <button class="interested-button">Interested</button>
+                        </td>
+                        <td class="pet-info">
+                            <img src="data:image/jpeg;base64,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" alt="Pet 6">
+                            <p><strong>Name:</strong> Bouchera</p>
+                            <p><strong>Gender:</strong> Male</p>
+                            <p><strong>Age:</strong> 2.5 years</p>
+                            <p><strong>Breed:</strong> Bengal</p>
+                            <p><strong>Specificity:</strong> Adventurous and curious</p>
+                            <button class="interested-button">Interested</button>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+         </div>
+
+        <div class="footer"><!--FOOTER-->
+            <p style="color:#444;text-align:center;">© 2024 Kaoutar Machouat. All rights reserved</p>
+            <h5 class="center"><a href="PrivacyStatement.html" target="_self" style="text-decoration:none;">Privacy/Disclaimer Statement</a></h5>
+        </div>
+
+    </body>
+</html>

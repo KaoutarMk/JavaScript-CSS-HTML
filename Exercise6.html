@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercise 6</title>
+        <style>
+            div, h2{
+                text-align:center;
+            }
+            * {box-sizing: border-box}
+            body {font-family: Verdana, sans-serif; margin:0}
+            .slide {display: none}
+            img {vertical-align: middle;width:60%;}
+            .container{max-width: 1000px;position: relative;margin: auto;}
+            .text{margin: 0 auto; width: 60%; margin-bottom: 20px;  }
+            .previous, .next{
+                cursor: pointer;
+                width: auto;
+                padding: 8px;
+                margin: 10px auto;
+                color: rgb(9, 9, 9);
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 5px;
+                user-select: none;
+                display:block;
+            }
+            .next{
+                right: 0;
+                border-radius: 5px;
+            }
+            .previous:hover, .next:hover{
+                background-color: rgba(122, 117, 117, 0.8);
+            }
+            
+            .nbtxt{
+                color: #121111;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: relative;
+                top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="color:#3e3b3b">Interior Design Catalog</h2>
+
+        <div class="container">
+            <div class="slide">
+                <div class="nbtxt">1 / 5</div>
+                <img src="https://www.ortalheat.com/hs-fs/hubfs/Corner%20RS%20110H%20Design%20Orly%20Dekter%2C%20Footage%20by%20Oded%20Smadar%206.jpg?width=800&name=Corner%20RS%20110H%20Design%20Orly%20Dekter%2C%20Footage%20by%20Oded%20Smadar%206.jpg" alt="Modern style">
+                <a class="previous" onclick="slidePosition(-1)">Previous</a>
+                <a class="next" onclick="slidePosition(1)">Next</a>
+                <p class="text">Step into the world of modern elegance, where sleek lines and minimalist sophistication create a harmonious ambiance of contemporary chic.</p>
+            </div>
+
+            <div class="slide">
+                <div class="nbtxt">2 / 5</div>
+                <img src="https://images.adsttc.com/media/images/6287/6ce9/3e4b/31cc/7400/000e/medium_jpg/FI1.jpg?1653042403" alt="Retro style">
+                <a class="previous" onclick="slidePosition(-1)">Previous</a>
+                <a class="next" onclick="slidePosition(1)">Next</a>
+                <p class="text">Experience the nostalgic charm of retro design, where bold colors, geometric patterns, and vintage decor evoke the spirit of past eras with a playful twist.</p>
+            </div>
+
+            <div class="slide">
+                <div class="nbtxt">3 / 5</div>
+                <img src="https://www.decoraid.com/wp-content/uploads/2021/04/Asian-Zen-Interior-Design-scaled-958x575.jpeg" alt="Asian Zen style">
+                <a class="previous" onclick="slidePosition(-1)">Previous</a>
+                <a class="next" onclick="slidePosition(1)">Next</a>
+                <p class="text">Find tranquility in the serene beauty of Asian Zen interiors, where clean lines, natural materials, and minimalist design principles create a harmonious and peaceful sanctuary.</p>
+            </div>
+
+            <div class="slide">
+                <div class="nbtxt">4 / 5</div>
+                <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-9f95cda/www.decorilla.com/online-decorating/wp-content/uploads/2022/08/Scandinavian-decor-for-open-living-1024x683.jpeg" alt="Scandinavian style">
+                <a class="previous" onclick="slidePosition(-1)">Previous</a>
+                <a class="next" onclick="slidePosition(1)">Next</a>
+                <p class="text">Embrace the warmth and simplicity of Scandinavian design, where cozy textures, muted colors, and functional elements blend seamlessly to create a welcoming and inviting space.</p>
+            </div>
+
+            <div class="slide">
+                <div class="nbtxt">5 / 5</div>
+                <img src="https://previews.123rf.com/images/ewastudio/ewastudio1802/ewastudio180200360/96616924-versailles-france-february-14-2018-interior-of-chateau-de-versailles-palace-of-versailles-near-paris.jpg" alt="Versailles style">
+                <a class="previous" onclick="slidePosition(-1)">Previous</a>
+                <a class="next" onclick="slidePosition(1)">Next</a>
+                <p class="text">Step into the opulent world of Versailles-inspired decor, where ornate details and lavish furnishings evoke the grandeur and romance of a bygone era.</p>
+            </div>
+
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            displaySlide(slideIndex);
+
+            function slidePosition(n){
+                displaySlide(slideIndex += n);
+            }
+
+            function currentSlide(n){
+                displaySlide(slideIndex = n);
+            }
+
+            function displaySlide(n){
+                let i;
+                let slide = document.getElementsByClassName("slide");
+
+                if(n > slide.length){
+                    slideIndex = 1;
+                }
+                if(n < 1){
+                    slideIndex = slide.length;
+                } 
+
+                for(i=0; i < slide.length; i++){
+                    slide[i].style.display = "none";
+                }
+
+                slide[slideIndex-1].style.display = "block";
+            }
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <h1>JavaScript Array</h1>
+    <h2>Print the elements of an array using toString()</h2>
+    <p id="p1"></p>
+    <h2>Print the elements of an array using join()</h2>
+    <p id="p2"></p>
+    <h2>Print the elements of an array in the format of index: value</h2>
+    <p id="p3"></p>
+
+    <script>
+
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        function toString(){
+            let text = fruits.toString();
+            document.getElementById("p1").innerHTML = text;
+        }
+        toString();
+
+        function join(){
+            let text = fruits.join(" & ");
+            document.getElementById("p2").innerHTML = text;
+        }
+        join();
+
+        function print(){
+            const keys = fruits.keys();
+            let text = "";
+            for (let x of keys){
+                text += x + " : " + fruits[x] +"<br>";
+            }
+            document.getElementById("p3").innerHTML = text;
+        }
+        print();
+
+    </script>
+</body>
+</html>

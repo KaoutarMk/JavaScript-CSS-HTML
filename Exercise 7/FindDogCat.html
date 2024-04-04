@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Purrfect Partners Adoption</title>
+        <link rel="stylesheet" href="styleSheetExo7.css">
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            body{
+                background-color:FloralWhite;
+                margin:0;
+            }
+            th, td{
+                color: #444;
+                background-color:FloralWhite;
+                font-weight:bold;
+                padding:10px;
+                text-align:center;
+            }
+            h1, h2,h4,label{
+                color:#443e3e;
+                font-weight:bold;
+            }
+        </style>
+        <script src="jsFileExo7.js"></script>
+    </head>
+    <body>
+
+        <div class="header"><!--HEADER-->
+            <table class="center"><!--Creating the table for linked gif-->
+                <tr>
+                    <td>
+                        <a href="HomePage.html" target="_self">
+                        <img src="https://media.tenor.com/CKPtTCb7_uYAAAAi/fat-cat.gif" alt="Cute cat animated GIF" style="width:100px;height:100px">
+                        </a>
+                    </td>
+                    <td>
+                        <h1> Purrfect Partners Adoption </h1>
+                        <div>
+                            <p id="datetime" style="font-size: 15px;"></p>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="HomePage.html" target="_self">
+                        <img src="https://clipart-library.com/images/8ixKaobip.gif" alt="Cute dog animated GIF" style="width:120px;height:120px">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="clearfix"><!--SIDE MENU-->
+            <div class="column menu">
+                <ul>
+                    <li><a href="MainPage.html" target="_self">Home Page</a></li>
+                    <li><a href="BrowseAvailablePets.html" target="_self" >Browse Available Pets</a></li>
+                    <li><a href="FindDogCat.html" target="_self">Find a Dog/Cat</a></li>
+                    <li><a href="DogCare.html" target="_self">Dog Care</a></li>
+                    <li><a href="CatCare.html" target="_self">Cat Care</a></li>
+                    <li><a href="HaveaPet.html" target="_self">Have a Pet to Give Away</a></li>
+                    <li><a href="ContactUs.html" target="_self">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="column content"><!--CONTENT-->
+                    <form id="form">
+                        <br>
+                        <h4>Select animal:</h4>
+                        <input type="radio" id="cat" name="animal1" value="cat">
+                        <label for="cat">Cat</label>
+                        <input type="radio" id="dog" name="animal1" value="dog">
+                        <label for="dog">Dog</label><br><br>
+                       
+                        <label for="breed1"><br>Breed:</label><br>
+                        <select id="breed1" name="breed1">
+                            <option value="Doesn't matter">Doesn't matter</option>
+                            <option value="labrador">Labrador</option>
+                            <option value="golden_retriever">Golden Retriever</option>
+                            <option value="german_shepherd">German Shepherd</option>
+                            <option value="bulldog">Bulldog</option>
+                            <option value="siamese">Siamese</option>
+                            <option value="persian">Persian</option>
+                            <option value="bengal">Bengal</option>
+                            <option value="abyssinian">Abyssinian</option>
+                            <option value="maine coon">Maine Coon</option>
+                            <option value="other">Other</option>
+                          </select><br><br>
+                       
+                        <label for="age1"><br>Preferred age:</label><br>
+                        <select id="age1" name="age1">
+                            <option value="any">Any</option>
+                            <option value="puppy_kitten">Puppy/Kitten</option>
+                            <option value="young">Young</option>
+                            <option value="adult">Adult</option>
+                            <option value="senior">Senior</option>
+                        </select><br><br>
+                       
+                        <label for="gender1"><br>Preferred gender:</label><br>
+                        <select id="gender1" name="gender1">
+                            <option value="any">Any</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select><br><br>
+                       
+                        <h4>Compatibility:</h4>
+                        <input type="checkbox" id="other_dogs" name="compatibility1" value="other_dogs">
+                        <label for="other_dogs">Gets along with other dogs</label><br>
+                        <input type="checkbox" id="other_cats" name="compatibility1" value="other_cats">
+                        <label for="other_cats">Gets along with other cats</label><br>
+                        <input type="checkbox" id="small_children" name="compatibility1" value="small_children">
+                        <label for="small_children">Gets along with small children</label><br><br><br>
+                       
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear">
+                       
+                    </form>
+            </div>
+
+         </div>
+
+        <div class="footer"><!--FOOTER-->
+            <p style="color:#444;text-align:center;">© 2024 Kaoutar Machouat. All rights reserved</p>
+            <h5 class="center"><a href="PrivacyStatement.html" target="_self" style="text-decoration:none;">Privacy/Disclaimer Statement</a></h5>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+
+    <style>
+        div {
+            border: 2px solid rgb(69, 62, 49);
+            padding:15px;
+        }
+        table {
+            border: rgb(244, 240, 240);
+            padding: 10px;
+        }
+        input[type = "number"]{
+            width:50px;
+            margin:5px;
+        }
+    </style>
+
+    <script src="jsFileExo4.js"></script>
+
+</head>
+
+<body>
+    <h3>Order Books Online</h3>
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <th>Book</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Basic Web Programming</td>
+                    <td>
+                        <input type="number" id="q1" name="q1" min="0">
+                    </td>
+                    <td>$19.99</td>
+                </tr>
+                <tr>
+                    <td>Intro to PHP</td>
+                    <td>
+                        <input type="number" id="q2" name="q2" min="0">
+                    </td>
+                    <td>$86.00</td>
+                </tr>
+                <tr>
+                    <td>Advanced JQuery</td>
+                    <td>
+                        <input type="number" id="q3" name="q3" min="0">
+                    </td>
+                    <td>$55.00</td>
+                </tr>
+            </table>
+            <br>
+            <button id="b" class="button button2" type="button" onclick = "changeIt(); calculatePrices()">Calculate the order</button>
+            <br>
+        </form>
+    </div>
+
+    <p style="font-weight:bold" id="p1"></p>
+    <p style="font-weight:bold" id="p2"></p>
+    <p style="font-weight:bold" id="p3"></p>
+    <p style="font-weight:bold" id="p4"></p>
+    
+</body>
+</html>
